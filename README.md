@@ -33,6 +33,8 @@ The goal of this assement is to complete as many of the features defined in the 
 9. Clicking on create new vessel submit button should send a POST request to `http://localhost:3000/add-vessel`. The request should consist of a JWT passed in the `Authorization` header, as well as a request body of `{"name": "your ship name", "size": "your ship size"}`. If this post is successful, the API will return the updated ist of vessels.
 10. The react app should handle this response gracefully but rerendeing the list to show the new vessel, and showing a success or fail message to the user.
 
+11. Once you are done with the assesment, please create a PR against this repo using your name for the github branch name. Thank you 🙏!
+
 Bonus:
 
 Sensible UX and UI choices. Use of color, animation, interactive feedback, form validation, and font choices will count towards the overall evaluation. 
