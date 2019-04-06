@@ -1,10 +1,16 @@
 var createError = require('http-errors');
 var express = require('express');
+var cors = require('cors')
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 
 var app = express();
+
+var app = express();
+
+// CORS can suck it
+app.use(cors());
 
 app.use(logger('dev'));
 app.use(express.json());
