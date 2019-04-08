@@ -41,14 +41,14 @@ class Login extends Component {
             console.log(result.data.token)
             sessionStorage.setItem(jwtToken, result.data.token);
             
-        }).then(() => {
+        })
+        .then(() => {
             axios.get(vessels, { headers: { 'Authorization': jwtToken } })
-        .then((data) => {
-            console.log(data.data)
+            .then((data) => {
+            console.log(data)
 
+             });
         });
-        });
-      console.log(this.state);
     }
 
     Add(e) {
